@@ -4,8 +4,11 @@ require File.expand_path('../lib/thready/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Alex Chaffee"]
   gem.email         = ["alex@stinky.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Dumps thread information to stdout when you press control-backslash.}
+  gem.summary       = %q{Sets up a signal handler so when your app receives a SIGQUIT it dumps
+  information about the currently running threads. On Unix (including MacOS)
+  this usually happens when you press control-backslash.
+  }
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
