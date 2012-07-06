@@ -6,9 +6,15 @@ $: << "#{here}/lib"
 require "thready"
 
 Thread.new {
+  @bar = 22
+  x = 10
   sleep 100
 }.run
 
-Thready.list_threads
-sleep 100
+Thread.new {
+  y = 20
+  sleep 100
+}
 
+
+sleep 100

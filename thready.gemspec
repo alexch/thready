@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   information about the currently running threads. On Unix (including MacOS)
   this usually happens when you press control-backslash.
   }
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/alexch/thready"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
@@ -17,4 +17,5 @@ Gem::Specification.new do |gem|
   gem.name          = "thready"
   gem.require_paths = ["lib"]
   gem.version       = Thready::VERSION
+  gem.license       = "MIT"
 end
